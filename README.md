@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + shadcn-ui + FSD
+# React + TypeScript + Vite + tailwind + shadcn-ui + FSD
 
 # FSD 방법론을 따른 폴더 구조
 
