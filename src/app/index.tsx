@@ -1,30 +1,25 @@
 import reactLogo from "@/shared/assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./index.css";
-import Counter from "@/features/counter";
+import InputText from "@/features/inputText";
+import TodoList from "@/features/todoList";
 
 function App() {
   return (
-    <>
-      <div>
+    <div className="text-center p-5">
+      <div className="flex justify-center space-x-4">
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="h-16" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="h-16" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <Counter />
-        <p>
-          Edit <code>src/app/index.tsx</code> and save to test HMR
-        </p>
+      <h1 className="text-xl font-bold my-5">Vite + React</h1>
+      <div className="max-w-md mx-auto bg-gray-100 shadow-md rounded p-5">
+        <InputText />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <TodoList />
+    </div>
   );
 }
 
