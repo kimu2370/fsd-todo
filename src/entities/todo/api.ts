@@ -1,4 +1,5 @@
-import { Todo, todoModel } from "./model";
+import { todoModel } from "./model";
+import { Todo } from "./types";
 
 export const TodoAPI = {
   getTodos: () => todoModel.getTodos(),

@@ -21,7 +21,7 @@ const InputText = () => {
   };
 
   return (
-    <div className="flex w-full items-center space-x-2">
+    <div className="flex w-full items-center space-x-2 mb-4">
       <Input
         type="text"
         value={text}

@@ -1,5 +1,5 @@
-import TodoAPI from "@/entities/todo";
-import { Todo } from "@/entities/todo/model";
+import { TodoAPI } from "@/entities/todo/api";
+import { Todo } from "@/entities/todo/types";
 import { useSyncExternalStore } from "react";
 
 const useTodoStore = (): [Todo[], typeof TodoAPI] => {
