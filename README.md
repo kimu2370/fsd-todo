@@ -2,16 +2,19 @@
 
 # FSD 방법론을 따른 폴더 구조
 
+각각의 폴더들은 위계질서가 존재하며 쓰여진 순서대로 Top은 down들을 import해서 쓸 수 있지만,
+down은 top을 import해서 사용할 수 없다.
+
+각 레이어 안에는 slices들이 존재하며 보통 '도메인'이라고 불리는 것들이 존재하게 된다.
+slices의 주요 목표는 그룹화하는 것이다.
+
+slices들 안에는 segments들이 존재하고 그 목적에 따라 사용하게 된다.
+`ex. ui, model, api, lib, config, constants`
+
 `app/`
 
 - 애플리케이션 진입점
 - 전역 상태 관리, 라우팅 설정, providers 등 설정 관련 내용들이 들어간다.
-
-`features/`
-
-- 개별 기능별로 분리된 모듈
-- 해당 기능에 필요한 UI, 비즈니스 로직, 상태 관리 등이 포함된다.
-- ex) `<Button /> + <Card /> + entitiy + store => <Task />`
 
 `pages/`
 
@@ -23,6 +26,12 @@
 
 - 여러 기능이나 페이지에서 공통적으로 사용될 수 있는 UI 컴포넌트
 - 재사용성이 높은 UI 요소들로 구성
+
+`features/`
+
+- 개별 기능별로 분리된 모듈
+- 해당 기능에 필요한 UI, 비즈니스 로직, 상태 관리 등이 포함된다.
+- ex) `<Button /> + <Card /> + entitiy + store => <Task />`
 
 `entities/`
 
