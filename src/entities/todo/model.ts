@@ -1,10 +1,5 @@
 import Observer from "@/shared/lib/observer";
-
-export interface Todo {
-  id: string;
-  text: string;
-  completed: boolean;
-}
+import { Todo } from "./types";
 
 class TodoModel extends Observer {
   private todos: Todo[] = [];

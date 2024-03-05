@@ -1,7 +1,6 @@
 import { Todo, todoModel } from "./model";
 
-// 외부에 노출할 엔티티 정의
-const TodoAPI = {
+export const TodoAPI = {
   getTodos: () => todoModel.getTodos(),
   addTodo: (text: string) => {
     const newTodo: Todo = {
@@ -23,6 +22,3 @@ const TodoAPI = {
   subscribe: (observer: () => void) => todoModel.subscribe(observer),
   unsubscribe: (observber: () => void) => todoModel.unsubscribe(observber),
 } as const;
-
-export type { Todo } from "./model";
-export default TodoAPI;

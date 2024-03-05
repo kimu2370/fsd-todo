@@ -17,8 +17,9 @@ function App() {
       <h1 className="text-xl font-bold my-5">Vite + React</h1>
       <div className="max-w-md mx-auto bg-gray-100 shadow-md rounded p-5">
         <InputText />
+        <div className="h-5" />
+        <TodoList />
       </div>
-      <TodoList />
     </div>
   );
 }

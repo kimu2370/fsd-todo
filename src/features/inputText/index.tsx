@@ -21,11 +21,11 @@ const InputText = () => {
   };
 
   return (
-    <div className="flex w-full max-w-sm items-center space-x-2">
+    <div className="flex w-full items-center space-x-2">
       <Input
         type="text"
         value={text}
-        placeholder="텍스트를 입력해주세요."
+        placeholder="할 일을 등록해주세요."
         onChange={(e) => setText(e.target.value)}
         className="text-black"
       />

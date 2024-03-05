@@ -8,7 +8,7 @@ const useTodoStore = (): [Todo[], typeof TodoAPI] => {
       TodoAPI.subscribe(onStoreChange);
       return () => TodoAPI.unsubscribe(onStoreChange);
     },
-    () => TodoAPI.getTodos()
+    () => TodoAPI.getTodos(),
   );
   return [snapshot, TodoAPI];
 };
